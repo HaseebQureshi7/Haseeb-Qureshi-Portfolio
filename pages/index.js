@@ -17,12 +17,15 @@ export default function Home() {
     <div className='master'>
       <Head>
         <title>HASEEB QURESHI</title>
-        <meta name="description" content="HASEEB QURESHI | FULL STACK WEB & APP DEVELOPER | JavaScript, React Native, React.js, Next.js, Python, Django, Backend Infrastructures, and Project Modelling" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div>
-        <HomePage />
-      </div>
-    </div>
-  )
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
+            <meta name="description" content="HASEEB QURESHI | FULL STACK WEB & APP DEVELOPER | JavaScript, React Native, React.js, Next.js, Python, Django, Backend Infrastructures, and Project Modelling" />
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <div>
+            <HomePage />
+          </div>
+        </div>
+        )
 }
