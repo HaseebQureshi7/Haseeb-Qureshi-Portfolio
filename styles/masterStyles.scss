@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+$primary-color: white;
+$secondary-color: rgb(192, 192, 192);
+$background-color: black;
+$accent-color: #6200ee;
+$accent-color-2: rgb(0, 247, 255);
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial";
+  overflow-x: hidden;
+}
+
+.master {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+}
+
+span {
+  background: linear-gradient(
+    to right,
+    $accent_color,
+    $accent-color-2,
+    $accent_color,
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100vw;
+  background-position: 100vw;
+  animation: colorgrad-anim 15s infinite linear;
+  @keyframes colorgrad-anim {
+    0% {
+      background-position: 200vw;
+    }
+    25% {
+      background-position: 300vw;
+    }
+    50% {
+      background-position: 400vw;
+    }
+    75% {
+      background-position: 200vw;
+    }
+  }
+}
+
+sup {
+  font-size: large;
+  font-weight: 900;
+  background: linear-gradient(
+    to right,
+    rgb(90, 90, 90),
+    $primary-color,
+    rgb(90, 90, 90),
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100vw;
+  background-position: 100vw;
+  animation: colorgrad-anim 15s infinite linear;
+  @keyframes colorgrad-anim {
+    0% {
+      background-position: 200vw;
+    }
+    25% {
+      background-position: 300vw;
+    }
+    50% {
+      background-position: 400vw;
+    }
+    75% {
+      background-position: 200vw;
+    }
+  }
+}

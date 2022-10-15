@@ -1,0 +1,397 @@
+@import "../../styles/masterStyles.scss";
+
+.Landing-master {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  padding: 25px;
+
+  .greetings {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-image: url("../../public/images/animated-lines.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+  }
+
+  .hero-master-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      flex: 1;
+    }
+
+    .section-right {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+
+      .intro {
+        h1 {
+          font-size: 5rem;
+        }
+        h5 {
+          font-size: 1.75rem;
+          background-image: linear-gradient(
+            45deg,
+            $accent-color,
+            $accent-color-2
+          );
+          background-clip: text;
+          color: transparent;
+        }
+      }
+
+      .stats {
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+
+        & > div {
+          flex: 1;
+
+          h1 {
+            text-align: center;
+            background-image: linear-gradient(
+              45deg,
+              $accent-color,
+              $accent-color-2
+            );
+            background-clip: text;
+            color: transparent;
+          }
+
+          h5 {
+            text-align: center;
+            color: $secondary-color;
+            // width: 75%;
+          }
+        }
+      }
+      .skills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        & > div {
+          display: flex;
+          align-items: center;
+          margin: 5px 0;
+
+          h5 {
+            font-size: 1rem;
+            margin: 0 25px;
+          }
+
+          img {
+            width: 30px !important;
+          }
+        }
+      }
+    }
+
+    .section-left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px;
+
+      .works {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+        background-image: url("../../public/images/works.png");
+        background-size: cover;
+        background-position: center;
+
+        &:hover {
+          padding: 15%;
+          transition: all 0.75s;
+        }
+
+        &:not(:hover) {
+          padding: 0%;
+          transition: all 0.5s;
+        }
+
+        h1 a {
+          text-decoration: none;
+          color: $primary-color;
+          // text-shadow: 2px 2px 12px $accent-color;
+        }
+      }
+      .about {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+        background-image: url("../../public/images/about.png");
+        background-size: cover;
+        background-position: center;
+
+        &:hover {
+          padding: 15%;
+          transition: all 0.75s;
+        }
+
+        &:not(:hover) {
+          padding: 0%;
+          transition: all 0.5s;
+        }
+
+        h1 a {
+          text-decoration: none;
+          color: $primary-color;
+          // text-shadow: 2px 2px 8px $accent-color;
+        }
+      }
+      .contact {
+        flex: 1;
+        width: 100%;
+        min-height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .contact-options {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-top: 10px;
+
+          .call-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: solid 2px $primary-color;
+            padding: 2.5px;
+            width: 25%;
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              border: solid 2px $primary-color;
+              text-decoration: none;
+              padding: 2.5px;
+              width: 100%;
+
+              h4 {
+                color: $primary-color;
+              }
+
+              &:hover {
+                background-image: url("../../public/images/shooting\ stars.gif");
+                background-size: cover;
+              }
+
+              &:not(:hover) {
+                background-color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .Landing-master {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    padding: 25px;
+
+    .greetings {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .hero-master-container {
+      width: 100%;
+      height: 200vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & > div {
+        flex: 1;
+        margin: 5%;
+      }
+
+      .section-right {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .intro {
+          h1 {
+            font-size: 5rem;
+          }
+          h5 {
+            font-size: 1.75rem;
+            color: $accent-color;
+          }
+        }
+
+        .stats {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          & > div {
+            flex: 1;
+
+            h1 {
+              text-align: center;
+              color: $accent-color-2;
+            }
+
+            h5 {
+              text-align: center;
+              // width: 75%;
+            }
+          }
+        }
+        .skills {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          & > div {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+
+            h5 {
+              font-size: 1rem;
+              margin: 0 25px;
+            }
+
+            img {
+              width: 30px !important;
+            }
+          }
+        }
+      }
+
+      .section-left {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10vh;
+        padding: 0px;
+
+        .works {
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin: 10px 0;
+          border-radius: 40px;
+          background-image: url("../../public/images/works.png");
+          background-size: cover;
+          background-position: center;
+
+          h1 {
+            // text-shadow: 2px 2px 12px $accent-color;
+          }
+        }
+        .about {
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin: 10px 0;
+          border-radius: 40px;
+          background-image: url("../../public/images/about.png");
+          background-size: cover;
+          background-position: center;
+
+          h1 {
+            // text-shadow: 2px 2px 8px $accent-color;
+          }
+        }
+        .contact {
+          flex: 1;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          .contact-options {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 10px;
+
+            .call-btn {
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              border: solid 2px $primary-color;
+              padding: 2.5px;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
