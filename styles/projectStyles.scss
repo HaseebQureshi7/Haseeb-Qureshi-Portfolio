@@ -9,6 +9,7 @@
   align-items: center;
   color: $primary-color;
   background-color: $background-color;
+  font-family: "Questrial";
 
   .project-heading {
     width: 100%;
@@ -101,6 +102,8 @@
         ul li {
           margin: 10px 0;
           list-style-type: disc;
+          font-weight: 900;
+          // text-transform: uppercase;
         }
       }
     }

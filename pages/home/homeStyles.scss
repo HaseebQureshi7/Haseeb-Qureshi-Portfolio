@@ -9,6 +9,7 @@
   align-items: center;
   color: $primary-color;
   padding: 25px;
+  font-family: "Questrial";
 
   .greetings {
     width: 50%;
@@ -277,7 +278,7 @@
           }
           h5 {
             font-size: 1.75rem;
-            color: $accent-color;
+            // color: $accent-color;
           }
         }
 
@@ -318,7 +319,7 @@
             }
 
             img {
-              width: 30px !important;
+              width: 50px !important;
             }
           }
         }

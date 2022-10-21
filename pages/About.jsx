@@ -8,8 +8,8 @@ import BackHomeIcon from '../public/images/back-icon.png';
 
 export default function About() {
 
-    const xp1Ref = useRef()
-    const xp1InView = useInView(xp1Ref)
+    // const xp1Ref = useRef()
+    // const xp1InView = useInView(xp1Ref)
 
     const xp2Ref = useRef()
     const xp2InView = useInView(xp2Ref)
@@ -69,7 +69,9 @@ export default function About() {
                         <div></div>
                     </div>
                     {/* TO MAKE A NEW EXPERIENCE, MAKE AND REPLACE INVIEW REFS  */}
-                    <motion.div initial={{ opacity: xp1InView ? 1 : 0 }} animate={{ opacity: xp1InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.75 }} className="experience">
+
+                    {/* IQUASAR */}
+                    {/* <motion.div initial={{ opacity: xp1InView ? 1 : 0 }} animate={{ opacity: xp1InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.75 }} className="experience">
                         <div className="xp-contents">
                             <h1>iQuasar Software Solutions</h1>
                             <h4 ref={xp1Ref}><span>FULL STACK DEVELOPER</span></h4>
@@ -85,17 +87,18 @@ export default function About() {
                         <div className="xp-line"></div>
                         <div className="xp-img"></div>
                         <div className="xp-line"></div>
-                    </div>
+                    </div> */}
 
+                    {/* RATIONAL TABS */}
                     <motion.div initial={{ opacity: xp2InView ? 0 : 0 }} animate={{ opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.75 }} className="experience">
                         <div className="xp-contents">
                             <h1>Rational Tabs Technologies</h1>
                             <h4 ref={xp2Ref}><span>FRONT END DEVELOPER</span></h4>
                             <h5>5/01/2022 - 5/04/2022</h5>
                             <br />
-                            <motion.p initial={{ y: xp2InView ? 10 : 0, opacity: xp2InView ? 0 : 0 }} animate={{ y: xp2InView ? 0 : 10, opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
-                            <motion.p initial={{ y: xp2InView ? 10 : 0, opacity: xp2InView ? 0 : 0 }} animate={{ y: xp2InView ? 0 : 10, opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
-                            <motion.p initial={{ y: xp2InView ? 10 : 0, opacity: xp2InView ? 0 : 0 }} animate={{ y: xp2InView ? 0 : 10, opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
+                            <motion.p initial={{ y: xp2InView ? 10 : 0, opacity: xp2InView ? 0 : 0 }} animate={{ y: xp2InView ? 0 : 10, opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Responsible for Design of Zeymal Educational ERP.</motion.p>
+                            <motion.p initial={{ y: xp2InView ? 10 : 0, opacity: xp2InView ? 0 : 0 }} animate={{ y: xp2InView ? 0 : 10, opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Developed interactive prototypes for Zeymal ERP.</motion.p>
+                            <motion.p initial={{ y: xp2InView ? 10 : 0, opacity: xp2InView ? 0 : 0 }} animate={{ y: xp2InView ? 0 : 10, opacity: xp2InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Contributed to over 15 company client websites.</motion.p>
                         </div>
                     </motion.div>
 
@@ -104,15 +107,17 @@ export default function About() {
                         <div className="xp-img"></div>
                         <div className="xp-line"></div>
                     </div>
+
+                    {/* FREELANCING */}
                     <motion.div initial={{ opacity: xp3InView ? 1 : 0 }} animate={{ opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.75 }} className="experience">
                         <div className="xp-contents">
                             <h1>FREELANCING</h1>
                             <h4 ref={xp3Ref}><span>UI/UX DESIGNER</span></h4>
                             <h5>2/05/2020 - 26/04/2021</h5>
                             <br />
-                            <motion.p initial={{ y: xp3InView ? 10 : 0, opacity: xp3InView ? 0 : 0 }} animate={{ y: xp3InView ? 0 : 10, opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
-                            <motion.p initial={{ y: xp3InView ? 10 : 0, opacity: xp3InView ? 0 : 0 }} animate={{ y: xp3InView ? 0 : 10, opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
-                            <motion.p initial={{ y: xp3InView ? 10 : 0, opacity: xp3InView ? 0 : 0 }} animate={{ y: xp3InView ? 0 : 10, opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
+                            <motion.p initial={{ y: xp3InView ? 10 : 0, opacity: xp3InView ? 0 : 0 }} animate={{ y: xp3InView ? 0 : 10, opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Worked as a Shopify Developer for Businesses.</motion.p>
+                            <motion.p initial={{ y: xp3InView ? 10 : 0, opacity: xp3InView ? 0 : 0 }} animate={{ y: xp3InView ? 0 : 10, opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Contributed to a ton of websites including personal and professional.</motion.p>
+                            <motion.p initial={{ y: xp3InView ? 10 : 0, opacity: xp3InView ? 0 : 0 }} animate={{ y: xp3InView ? 0 : 10, opacity: xp3InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Also worked as a Designer and made Logos and Banners.</motion.p>
                         </div>
                     </motion.div>
 
@@ -122,23 +127,47 @@ export default function About() {
                         <div className="xp-line"></div>
                     </div>
 
+                    {/* VALLEY MIST */}
                     <motion.div initial={{ opacity: xp4InView ? 1 : 0 }} animate={{ opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.75 }} className="experience">
                         <div className="xp-contents">
                             <h1>Valley Mist</h1>
                             <h4 ref={xp4Ref}><span>UNITY 3D DEVELOPER</span></h4>
                             <h5>27/02/2018 - 20/08/2019</h5>
                             <br />
-                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
-                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
-                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas?</motion.p>
+                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Worked on Unity Engine for mobile game development.</motion.p>
+                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Developed 3D assets and models with Blender.</motion.p>
+                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Published a game called "ENDRUN" on playstore on 17/06/2018.</motion.p>
                         </div>
                     </motion.div>
+
 
                     <div className="about-end-heading">
                         <div></div>
                         <h1>THAT SUMS IT UP!</h1>
                         <div></div>
                     </div>
+
+                    <div className="techstack">
+                        {/* <div className="tech-heading">
+                            <h1>ARSENAL</h1>
+                            <div></div>
+                        </div> */}
+                        <div className="tech">
+                            <div className="design">
+                                <TypeAnimation sequence={['FIGMA', 500, 'CANVA', 500, 'PHOTOSHOP', 500]} speed={30} cursor={false} wrapper="h1" repeat={999} />
+                            </div>
+                            <div className="frontned">
+                                <TypeAnimation sequence={['HTML', 500, 'SCSS', 500, 'JAVASCRIPT', 500, 'REACT.js', 500, 'NEXT.js', 500]} speed={30} cursor={false} wrapper="h1" repeat={999} />
+                            </div>
+                            <div className="backend">
+                                <TypeAnimation sequence={['PYTHON', 500, 'DJANGO', 500, 'SQLite', 500, 'FIREBASE', 500]} speed={30} cursor={false} wrapper="h1" repeat={999} />
+                            </div>
+                            <div className="deployment">
+                                <TypeAnimation sequence={['HEROKU', 500, 'PYTHONANYWHERE', 500, 'AWS', 500]} speed={30} cursor={false} wrapper="h1" repeat={999} />
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="back-home">
                         <Link href={"/"}><Image src={BackHomeIcon} width={50} height={35} /></Link>
                         <Link href={"/"}>BACK TO HOME</Link>
