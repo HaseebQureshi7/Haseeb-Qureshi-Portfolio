@@ -136,7 +136,7 @@ export default function About() {
                             <br />
                             <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.5, duration: 0.75 }}><sup>1. </sup>Worked on Unity Engine for mobile game development.</motion.p>
                             <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.75, duration: 0.75 }}><sup>2. </sup>Developed 3D assets and models with Blender.</motion.p>
-                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Published a game called "ENDRUN" on playstore on 17/06/2018.</motion.p>
+                            <motion.p initial={{ y: xp4InView ? 10 : 0, opacity: xp4InView ? 0 : 0 }} animate={{ y: xp4InView ? 0 : 10, opacity: xp4InView ? 1 : 0 }} exit={{ opacity: 0 }} transition={{ delay: 1, duration: 0.75 }}><sup>3. </sup>Published a game called &ldquo;ENDRUN&ldquo; on playstore on 17/06/2018.</motion.p>
                         </div>
                     </motion.div>
 

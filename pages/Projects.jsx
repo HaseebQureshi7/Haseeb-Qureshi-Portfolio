@@ -114,7 +114,7 @@ export default function Projects() {
                 <ul>
                   <li><sup>1.</sup> School admins can use this for management purposes.</li>
                   <li><sup>2.</sup> Accessible design for ease of use and convenience.</li>
-                  <li><sup>3.</sup> Helpful for small schools that can't pay for an enterprise ERP system.</li>
+                  <li><sup>3.</sup> Helpful for small schools that can&apos;t pay for an enterprise ERP system.</li>
                 </ul>
               </motion.div>
 
@@ -135,7 +135,7 @@ export default function Projects() {
               </div>
 
               <motion.div initial={{ y: proj4InView ? 50 : 0, opacity: proj4InView ? 0 : 1 }} animate={{ y: proj4InView ? 0 : 50, opacity: proj4InView ? 1 : 0 }} exit={{ y: proj4InView ? 50 : 0, opacity: proj4InView ? 0 : 1 }} transition={{ duration: 0.75, delay: 0.2 }} ref={proj4ViewRef} className="project-description">
-                <h5>ONLY IDENTITY is an Open Source web app generates IDs of people who don't exist in real life, developed by <span>Haseeb Qureshi</span>, puts together AI generated data.</h5>
+                <h5>ONLY IDENTITY is an Open Source web app generates IDs of people who don&apos;t exist in real life, developed by <span>Haseeb Qureshi</span>, puts together AI generated data.</h5>
               </motion.div>
               <motion.div initial={{ x: proj4InView ? 50 : 0, opacity: proj4InView ? 0 : 1 }} animate={{ x: proj4InView ? 0 : 50, opacity: proj4InView ? 1 : 0 }} exit={{ x: proj4InView ? 50 : 0, opacity: proj4InView ? 0 : 1 }} transition={{ duration: 0.75, delay: 0.2 }} className="project-bullets">
                 <ul>
