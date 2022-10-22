@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className='master'>
       <Head>
-        <title>HASEEB QURESHI</title>
+        <title>Haseeb Qureshi</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
