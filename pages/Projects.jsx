@@ -9,6 +9,7 @@ import budgetory from '../public/images/projects/budgetory.gif';
 import BackHomeIcon from '../public/images/back-icon.png';
 import Link from 'next/link';
 import { useRef } from 'react';
+import Head from 'next/head';
 
 export default function Projects() {
 
@@ -32,6 +33,13 @@ export default function Projects() {
 
   return (
     <>
+      <Head>
+        <title>Haseeb&lsquo;s Projects</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
+        <meta name="description" content="Haseeb's Projects | FULL STACK WEB & APP DEVELOPER | JavaScript, React Native, React.js, Next.js, Python, Django, Backend Infrastructures, and Project Modelling" />
+      </Head>
       <div className="projects-master">
         <div className="project-heading">
           <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }}><span>WORKS</span></motion.h1>

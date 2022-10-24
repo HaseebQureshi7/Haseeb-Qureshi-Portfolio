@@ -1,4 +1,5 @@
 import { motion, useInView } from "framer-motion";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -22,6 +23,13 @@ export default function About() {
 
     return (
         <>
+            <Head>
+                <title>Who is Haseeb?</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"></link>
+                <meta name="description" content="Who is Haseeb Qureshi? | FULL STACK WEB & APP DEVELOPER | JavaScript, React Native, React.js, Next.js, Python, Django, Backend Infrastructures, and Project Modelling" />
+            </Head>
             <div className="about-master">
                 <div className="about-intro">
                     <motion.div initial={{ scale: 0.75, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.75, opacity: 0 }} transition={{ duration: 3 }} className="about-intro-wrapper">

@@ -387,8 +387,12 @@
               align-items: center;
               justify-content: space-evenly;
               border: solid 2px $primary-color;
-              padding: 2.5px;
+              padding: 2px;
               width: 50%;
+            }
+
+            a img{
+              // width: 25px !important;
             }
           }
         }

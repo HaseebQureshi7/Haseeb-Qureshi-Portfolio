@@ -22,7 +22,7 @@ export default function Hero() {
                     <TypeAnimation sequence={'I AM HASEEB'} repeat={99} cursor={false} speed={50} wrapper="h1"></TypeAnimation> */}
                         <h1>Hi.</h1>
                         <h1>I AM HASEEB</h1>
-                       <TypeAnimation sequence={'FULL STACK WEB & APP DEVELOPER'} repeat={99} speed={50} cursor={false} wrapper="h5"/>
+                        <TypeAnimation sequence={'FULL STACK WEB & APP DEVELOPER'} repeat={99} speed={50} cursor={false} wrapper="h5" />
                         {/* <h5>FULL STACK WEB & APP DEVELOPER</h5> */}
                     </div>
 
